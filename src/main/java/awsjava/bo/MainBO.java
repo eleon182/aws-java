@@ -1,6 +1,5 @@
 package awsjava.bo;
 
-import awsjava.data.GameBoardData;
 import awsjava.data.UserProfileData;
 import awsjava.data.UserTokenData;
 
@@ -10,7 +9,6 @@ import awsjava.data.UserTokenData;
 public class MainBO {
     UserProfileData userProfileData = new UserProfileData();
     UserTokenData userTokenData = new UserTokenData();
-    GameBoardData gameBoardData = new GameBoardData();
 
     public String getUsernameFromToken(String token) {
         return userTokenData.getUsername(token);
