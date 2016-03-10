@@ -69,7 +69,7 @@ public class GameBoardDAO {
         this.unitHealth = unitHealth;
     }
 
-    public String getOwner() {
+    public Stzring getOwner() {
         return owner;
     }
 

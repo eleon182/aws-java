@@ -18,13 +18,4 @@ public class GameBoardData extends AWSDatabase {
         return getMapper().load(GameBoardDAO.class, sector.getX(), sector.getY());
     }
 
-    public boolean saveSector(GameBoardDAO sector){
-        if(Integer.parseInt(sector.getX()) > gameConstants.maxRows || Integer.parseInt(sector.getY()) > gameConstants.maxColumns){
-            return false;
-        }
-        else {
-            getMapper().save(sector, new DynamoDBMapperConfig(DynamoDBMapperConfig.SaveBehavior.UPDATE_SKIP_NULL_ATTRIBUTES));
-            return true;
-        }
-    }
 }

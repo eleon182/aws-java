@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Created by steve on 10/18/15.
  */
 @SpringBootApplication
-public class Dow {
+public class Awsjava {
     public static void main(String[] args) {
-        SpringApplication.run(Dow.class, args);
+        SpringApplication.run(Awsjava.class, args);
     }
 }
