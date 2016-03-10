@@ -15,5 +15,4 @@ public class MainResource {
         AWSDatabase temp = new AWSDatabase();
         return new ResponseEntity<>(temp.listTables(), HttpStatus.OK);
     }
-
 }
