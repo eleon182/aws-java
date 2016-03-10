@@ -28,7 +28,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
-    baseName = 'dow-rest-service'
+    baseName = 'awsjava-rest-service'
     version =  '0.1.0'
 }
 
