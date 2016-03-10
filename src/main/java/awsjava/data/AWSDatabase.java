@@ -19,7 +19,6 @@ public class AWSDatabase {
 
     public AWSDatabase() {
 //        aws = new AmazonDynamoDBClient(new ProfilesConfigFile().getCredentials("default"));
-        
         aws = new AmazonDynamoDBClient();
         aws.setRegion(Region.getRegion(Regions.US_WEST_2));
         mapper = new DynamoDBMapper(aws);
